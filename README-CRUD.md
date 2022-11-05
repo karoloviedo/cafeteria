@@ -27,9 +27,9 @@ http://cafeteria-crud.test/login --> ESTA SE CORRE EN LARAGON QUE ES UN GESTOR D
 
 <!-- CONSULTAS A BD: -->
 
-SELECT ventas.num_venta, Sum(ventas.total) AS Expr1
-FROM ventas
-GROUP BY ventas.num_venta;
+SELECT productos.categoria, Sum(productos.cantidad) AS Expr1
+FROM productos
+GROUP BY productos.categoria;
 
 SELECT MAX(productos.cantidad) max_list_price
 FROM productos;
